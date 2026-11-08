@@ -79,7 +79,13 @@
     .tag{padding:9px 13px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:999px;color:#cbd3df;font-size:.88rem}
     .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
     .project{min-height:330px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
-    .project-visual{height:170px;border-radius:16px;background:linear-gradient(135deg,rgba(124,92,255,.24),rgba(35,200,183,.12));display:grid;place-items:center;font-size:3rem}
+    .project-visual{height:170px;border-radius:16px;background:linear-gradient(135deg,rgba(124,92,255,.13),rgba(35,200,183,.07));display:grid;place-items:center;overflow:hidden}
+    .project-visual img{width:112px;height:112px;object-fit:contain;border-radius:22px;filter:drop-shadow(0 10px 22px rgba(0,0,0,.2))}
+    .project-mark{width:94px;height:94px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.18);border-radius:26px;font-weight:900;font-size:1.9rem;letter-spacing:-.08em;box-shadow:0 14px 32px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.15)}
+    .mark-school{background:linear-gradient(145deg,#116b84,#59d4c2);color:#f5ffff}
+    .mark-menu{background:linear-gradient(145deg,#f2a64a,#c64b42);color:#fff8eb}
+    .mark-logic{background:linear-gradient(145deg,#6653cc,#bd82ff);color:#fff}
+    .mark-v4k{background:linear-gradient(145deg,#27364a,#647d9c);color:#d8f1ff}
     .project h3{font-size:1.35rem;margin:20px 0 7px}
     .project p{font-size:.92rem}
     .project-link{display:inline-block;margin-top:18px;color:#cfc7ff;font-weight:700}
@@ -182,7 +188,7 @@
         <div class="projects">
           <article class="card project reveal">
             <div>
-              <div class="project-visual">✦</div>
+              <div class="project-visual"><img src="assets/camphus-logo.png" alt="CampHus logo" /></div>
               <h3>CampHus</h3>
               <p>An open learning and knowledge-sharing platform with community discussions, study tools, events, quizzes, and flashcards.</p>
             </div>
@@ -190,7 +196,7 @@
           </article>
           <article class="card project reveal">
             <div>
-              <div class="project-visual">◈</div>
+              <div class="project-visual"><img src="assets/chakravyuha-logo.png" alt="Chakravyuha logo" /></div>
               <h3>Chakravyuha</h3>
               <p>A leadership challenge game with a six-stage journey, original story scenes, and host-led multiplayer play for events.</p>
             </div>
@@ -198,7 +204,7 @@
           </article>
           <article class="card project reveal">
             <div>
-              <div class="project-visual">⌁</div>
+              <div class="project-visual"><span class="project-mark mark-school" role="img" aria-label="School Lab logo">SL</span></div>
               <h3>School Lab</h3>
               <p>A Python desktop suite of virtual physics, chemistry, and biology labs, with simulations, experiment records, and report generation.</p>
             </div>
@@ -206,7 +212,7 @@
           </article>
           <article class="card project reveal">
             <div>
-              <div class="project-visual">◎</div>
+              <div class="project-visual"><span class="project-mark mark-menu" role="img" aria-label="MenuFlow logo">MF</span></div>
               <h3>MenuFlow</h3>
               <p>A QR-based restaurant ordering system built with a React frontend, Node.js and Express backend, and MySQL.</p>
             </div>
@@ -214,7 +220,7 @@
           </article>
           <article class="card project reveal">
             <div>
-              <div class="project-visual">⌘</div>
+              <div class="project-visual"><span class="project-mark mark-logic" role="img" aria-label="Digital Logic and Learning logo">01</span></div>
               <h3>Digital Logic & Learning Materials</h3>
               <p>Digital logic lock concepts and educational presentation materials exploring encryption and decryption.</p>
             </div>
@@ -222,7 +228,7 @@
           </article>
           <article class="card project reveal">
             <div>
-              <div class="project-visual">↓</div>
+              <div class="project-visual"><span class="project-mark mark-v4k" role="img" aria-label="V4K logo">V4K</span></div>
               <h3>V4K · In progress</h3>
               <p>Video-downloader app concepts for Windows and Android. Builds and real-device behavior still need validation.</p>
             </div>
